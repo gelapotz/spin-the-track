@@ -6,7 +6,9 @@ const showAlbumAndArtist = (album, artist, name) => {
     return;
   }
 
-  // Clear previous content
+  // Format fan number with commas
+  const formattedFans = artist.nb_fan.toLocaleString();
+
   output.innerHTML = `
     <div class="greeting">
       <p>Hey <strong>${name}</strong>, you might wanna give these a listen today!</p>
@@ -20,7 +22,7 @@ const showAlbumAndArtist = (album, artist, name) => {
 
     <div class="artist-card">
       <h3>Artist Info</h3>
-      <p>Fans: ${artist.nb_fan}</p>
+      <p>Fans: ${formattedFans}</p>
       <img src="${artist.picture_medium}" alt="Portrait of ${artist.name}">
     </div>
   `;
