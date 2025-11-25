@@ -6,14 +6,22 @@ const showAlbumAndArtist = (album, artist, name) => {
     return;
   }
 
-  // Personalized greeting
+  // Clear previous content
   output.innerHTML = `
-    <p>Hey <strong>${name}</strong>, you might wanna give these a listen today!</p>
-    <h2>${album.title}</h2>
-    <p>By ${album.artist.name}</p>
-    <img src="${album.cover_medium}" alt="${album.title}">
-    <h3>Artist Info</h3>
-    <p>Fans: ${artist.nb_fan}</p>
-    <img src="${artist.picture_medium}" alt="${artist.name}">
+    <div class="greeting">
+      <p>Hey <strong>${name}</strong>, you might wanna give these a listen today!</p>
+    </div>
+
+    <div class="album-card">
+      <h2>${album.title}</h2>
+      <p>By ${album.artist.name}</p>
+      <img src="${album.cover_medium}" alt="Album cover for ${album.title}">
+    </div>
+
+    <div class="artist-card">
+      <h3>Artist Info</h3>
+      <p>Fans: ${artist.nb_fan}</p>
+      <img src="${artist.picture_medium}" alt="Portrait of ${artist.name}">
+    </div>
   `;
 };

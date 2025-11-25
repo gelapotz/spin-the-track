@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Spin the Track 🎶</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Spin the Track 🎶</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts must be inside <head> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
 </head>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oi&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-
 <body>
-    <h1>Spin the Track 🎶</h1>
-    <p>Click the button to get a random music suggestion!</p>
+  <h1>Spin the Track 🎶</h1>
+  <p>Click the button to get a random music suggestion!</p>
 
+  <!-- Controls grouped for styling -->
+  <div class="controls">
     <label for="username">Hello! What's your name?</label>
     <input type="text" id="username" placeholder="Your name">
-
-    <!-- User action -->
     <button id="spinBtn">Spin!</button>
+  </div>
 
+  <!-- Dynamic content will appear here -->
+  <div id="output"></div>
 
-    <!-- Dynamic content will appear here -->
-    <div id="output"></div>
-
-    <script src="src/api.js"></script>
-    <script src="src/dom.js"></script>
-    <script src="src/app.js"></script>
-
+  <!-- Scripts -->
+  <script src="src/api.js"></script>
+  <script src="src/dom.js"></script>
+  <script src="src/app.js"></script>
 </body>
-
 </html>
