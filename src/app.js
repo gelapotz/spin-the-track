@@ -4,7 +4,7 @@ document.getElementById("spinBtn").addEventListener("click", async () => {
 
   // If no name entered, show an alert and stop
   if (!name) {
-    alert("Please enter your name before spinning!");
+    alert("Please enter your name before spinning.");
     nameInput.focus();
     return;
   }
