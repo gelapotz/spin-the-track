@@ -1,4 +1,5 @@
 // Use a proxy to bypass CORS
+// https://cors-anywhere.herokuapp.com/corsdemo
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const chartUrl = "https://api.deezer.com/chart";
 

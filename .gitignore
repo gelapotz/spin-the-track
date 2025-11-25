@@ -1,0 +1,17 @@
+# Ignore dependencies (if you ever add npm/yarn)
+node_modules/
+
+# Ignore build or distribution folders
+dist/
+build/
+
+# Ignore environment variable files
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
