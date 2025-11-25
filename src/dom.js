@@ -27,3 +27,15 @@ const showAlbumAndArtist = (album, artist, name) => {
     </div>
   `;
 };
+
+const showError = (message) => {
+  const output = document.getElementById("output");
+  output.innerHTML = `
+    <div class="error-box">
+      <p style="color: #ff4c4c; font-weight: bold;">
+        Oopsies! ${message}
+      </p>
+    </div>
+  `;
+};
+
