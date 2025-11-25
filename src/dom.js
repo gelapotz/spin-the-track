@@ -11,7 +11,7 @@ const showAlbumAndArtist = (album, artist, name) => {
 
   output.innerHTML = `
     <div class="greeting">
-      <p>Hey <strong>${name}</strong>, you might wanna give these a listen today!</p>
+      <p>Hey <strong>${name}</strong>, you might wanna give this a listen today!</p>
     </div>
 
     <div class="album-card">
@@ -21,7 +21,7 @@ const showAlbumAndArtist = (album, artist, name) => {
     </div>
 
     <div class="artist-card">
-      <h3>Artist Info</h3>
+      <h3>Artist</h3>
       <p>Fans: ${formattedFans}</p>
       <img src="${artist.picture_medium}" alt="Portrait of ${artist.name}">
     </div>

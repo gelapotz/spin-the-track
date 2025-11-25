@@ -1,9 +1,18 @@
+/* Reset defaults */
 body {
   margin: 0;
   padding: 2rem;
   font-family: "Parkinsans", sans-serif;
   text-align: center;
-  background: #f0f0f0;
+  background-color: #121212; /* Spotify dark background */
+  color: #fff; /* White text for contrast */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: "Parkinsans", sans-serif;
+  color: #1db954; /* Spotify green accent */
+  margin-bottom: 1rem;
 }
 
 /* Controls container */
@@ -12,8 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  max-width: 300px;
-  margin: 0 auto; /* centers on page */
+  margin-bottom: 2rem;
 }
 
 /* Input field */
@@ -22,31 +30,79 @@ body {
   font-size: 1rem;
   width: 100%;
   max-width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 25px; /* pill shape */
+  text-align: center;
+  font-family: "Parkinsans", sans-serif;
+  background-color: #282828;
+  color: #fff;
 }
 
 /* Button styling */
 button {
-  background: #4caf50;
-  color: white;
+  background-color: #1db954; /* Spotify green */
+  color: #fff;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  border-radius: 25px; /* pill shape */
+  transition: background-color 0.3s ease;
+  font-family: "Parkinsans", sans-serif;
 }
 
 button:hover {
-  background: #45a049;
+  background-color: #1ed760; /* lighter green on hover */
 }
 
-/* Output area */
+/* Output container */
 #output {
   margin-top: 2rem;
-  font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 600px; /* keep cards narrow on desktop */
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column; /* always vertical */
+  gap: 20px; /* spacing between cards */
+}
+
+/* Greeting box */
+.greeting {
+  background-color: #181818; /* Spotify card background */
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #282828; /* subtle divider */
+}
+
+/* Album and artist cards */
+.album-card, .artist-card {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #181818; /* Spotify card background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* subtle depth */
+  text-align: center;
+}
+
+/* Album card accent */
+.album-card {
+  border-left: 4px solid #1db954; /* green accent stripe */
+}
+
+/* Artist card accent */
+.artist-card {
+  border-left: 4px solid #1ed760; /* lighter green accent stripe */
+}
+
+/* Images */
+.album-card img, .artist-card img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.artist-card img {
+  border-radius: 50%; /* circular portrait */
 }
