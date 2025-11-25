@@ -1,5 +1,13 @@
 document.getElementById("spinBtn").addEventListener("click", async () => {
-  const name = document.getElementById("username").value || "Music Lover";
+  const nameInput = document.getElementById("username");
+  const name = nameInput.value.trim();
+
+  // If no name entered, show an alert and stop
+  if (!name) {
+    alert("Please enter your name before spinning!");
+    nameInput.focus();
+    return;
+  }
 
   const album = await getRandomAlbum();
   if (album.error) {
