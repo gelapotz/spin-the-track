@@ -2,9 +2,14 @@
 body {
   margin: 0;
   padding: 2rem;
-  font-family: Arial, sans-serif;
+  font-family: "Parkinsans", sans-serif;
   text-align: center;
   background: #f0f0f0;
+}
+
+/* Styling for input field and button */
+#username, #spinBtn {
+    font-family: "Parkinsans", sans-serif;
 }
 
 /* Heading */
