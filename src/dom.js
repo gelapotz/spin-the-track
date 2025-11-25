@@ -8,7 +8,7 @@ const showAlbumAndArtist = (album, artist, name) => {
 
   // Personalized greeting
   output.innerHTML = `
-    <p>Hey ${name}, you might wanna give these a listen today!</p>
+    <p>Hey <strong>${name}</strong>, you might wanna give these a listen today!</p>
     <h2>${album.title}</h2>
     <p>By ${album.artist.name}</p>
     <img src="${album.cover_medium}" alt="${album.title}">
